@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-import "./Login.css"; // 👈 CSS file import
+import "./Login.css";
+import { useNavigate } from "react-router-dom";
+
+
+
 
 export default function Login() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -26,8 +32,11 @@ export default function Login() {
           timer: 2000,
           showConfirmButton: false,
         });
+        
 
-        setTimeout(() => (window.location.href = "/"), 2000);
+          setTimeout(() => {
+    navigate("/dashboard", { replace: true });
+  }, 1500);
       } else {
         Swal.fire({
           icon: "error",
