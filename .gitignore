@@ -1,0 +1,13 @@
+# Node modules
+frontend/node_modules/
+backend/node_modules/
+
+# Env files
+backend/.env
+
+# Build files
+frontend/dist/
+backend/dist/
+
+# Prisma + misc
+backend/prisma/migrations/

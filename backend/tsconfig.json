@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* === Project Structure === */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* === Target Environment === */
+    "module": "CommonJS",
+    "target": "ES2020",
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "types": ["node","express"],
+
+    /* === Output Options === */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": false,
+
+    /* === Interoperability === */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* === Type Safety === */
+    "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* === Build Performance === */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

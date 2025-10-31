@@ -1,0 +1,126 @@
+/* Container */
+.record-table {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.record-table h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styling */
+.record-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.record-form input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.record-form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.record-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.record-form button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.record-form button:hover {
+  opacity: 0.9;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons inside table */
+td button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+td button:first-child {
+  background-color: #007bff; /* Edit */
+}
+
+td button:last-child {
+  background-color: #dc3545; /* Delete */
+}
+
+td button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .record-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .record-form input {
+    width: 90%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+  }
+}
